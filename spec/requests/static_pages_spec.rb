@@ -17,11 +17,11 @@ describe "Static pages" do
     click_link "Contact"
     page.should have_selector 'title', text: full_title('Contact')
     #click_link "Home"
-    p#age.should have_selector 'title', text: full_title('page_title')
+    #page.should have_selector 'title', text: full_title('page_title')
     #click_link "Sign up now!"
     #page.should have selector 'title', text: full_title('Sign up')
-    click_link "bulat app"
-    page.should have_selector 'title', text: full_title('page_title')
+    #click_link "bulat app"
+    #page.should have_selector 'title', text: full_title('page_title')
   end
 end
 
