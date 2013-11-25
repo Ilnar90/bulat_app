@@ -1,7 +1,7 @@
 BulatApp::Application.routes.draw do
 resources :users
 resources :sessions, only: [:new, :create, :destroy]
-
+resources :microposts, only: [:create, :destroy]
 root to: 'static_pages#home'
 
 match '/signup',  to: 'users#new'
@@ -27,8 +27,7 @@ match '/contact', to: 'static_pages#contact'
   #   resources :products do
   #     member do
   #       get 'short'
-  #       post 'toggle'
-  #     end
+  #       post 'toggle'resources :microposts, only: [:create, :destroy]
   #
   #     collection do
   #       get 'sold'
